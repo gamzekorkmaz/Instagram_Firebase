@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".myProfileActivity">
+
+    <ImageView
+        android:id="@+id/profilResmi_ImageView_my_profile_activity"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/kullaniciAdi_TextView_my_profile_activity"
+        android:layout_width="255dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:padding="2dp"
+        android:paddingTop="3dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gonderiSayisi_TextView_my_profile_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profilResmi_ImageView_my_profile_activity"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="kullaniciAdi" />
+
+    <TextView
+        android:id="@+id/gonderiSayisi_TextView_my_profile_activity"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="2dp"
+        android:paddingTop="3dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/takipciSayisi_TextView_my_profile_activity"
+        app:layout_constraintStart_toEndOf="@+id/profilResmi_ImageView_my_profile_activity"
+        app:layout_constraintTop_toTopOf="@+id/takipciSayisi_TextView_my_profile_activity"
+        tools:text="0 gönderi" />
+
+    <TextView
+        android:id="@+id/takipciSayisi_TextView_my_profile_activity"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="20dp"
+        android:padding="2dp"
+        android:paddingTop="3dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/talipEdilenSayisi_TextView_my_profile_activity"
+        app:layout_constraintTop_toTopOf="@+id/talipEdilenSayisi_TextView_my_profile_activity"
+        tools:text="0 takipçi" />
+
+    <TextView
+        android:id="@+id/talipEdilenSayisi_TextView_my_profile_activity"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:padding="2dp"
+        android:paddingTop="3dp"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/profilResmi_ImageView_my_profile_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="0 takip" />
+
+    <ListView
+        android:id="@+id/gonderiler_ListView_my_profile_activity"
+        android:layout_width="395dp"
+        android:layout_height="530dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kisiyeAitOzet_TextView_my_profile_activity" />
+
+    <TextView
+        android:id="@+id/kisiyeAitOzet_TextView_my_profile_activity"
+        android:layout_width="395dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gonderiSayisi_TextView_my_profile_activity"
+        tools:text="kişiye ait özet" />
+</android.support.constraint.ConstraintLayout>

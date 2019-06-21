@@ -1,0 +1,4 @@
+-Android Studio ile yazdýðým bu projede Instagram benzeri bir uygulamayý Firebase kullanarak yapmaya çalýþtým. Projeye bitirme ödevime baþladýktan sonra devam edemedim, bu yüzden eksikler mevcut.
+-Email: gamze@gmail.com
+ Þifre: 123456
+ bilgileri ile giriþ yaparak inceleyebilirsiniz.

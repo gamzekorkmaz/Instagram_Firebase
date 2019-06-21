@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/profili_Duzenle" android:title="Profili Düzenle"></item>
+    <item android:id="@+id/profilim_cikis_yap" android:title="Çıkış Yap"></item>
+</menu>
